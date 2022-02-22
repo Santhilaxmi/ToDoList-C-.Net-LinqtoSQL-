@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ToDoSQL">
+  <DataContextMoniker Name="/ToDoSQLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6216165b-ef49-4fbd-86c1-5f1cd1c5e049" absoluteBounds="8.5, 3.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ToDoSQLDataContext/ToDo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c514f777-7f9f-44ab-9583-b7e4da4b3e92" absoluteBounds="8.515, 4.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76775ea5-126f-41ae-9b88-bc8ce7d9e45c" absoluteBounds="5.875, 3.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ToDoSQLDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89660600-5e80-4767-bfcf-21ad81aca75c" absoluteBounds="5.89, 4.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.875 : 4.56814697265625); (8.5 : 4.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ToDoSQLDataContext/User/User_ToDo" />
+      <nodes>
+        <classShapeMoniker Id="76775ea5-126f-41ae-9b88-bc8ce7d9e45c" />
+        <classShapeMoniker Id="6216165b-ef49-4fbd-86c1-5f1cd1c5e049" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
