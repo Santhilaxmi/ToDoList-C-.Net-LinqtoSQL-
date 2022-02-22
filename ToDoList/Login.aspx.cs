@@ -20,7 +20,7 @@ namespace ToDoList
             ToDoSQLDataContext db = new ToDoSQLDataContext();
             // Fetch the entered User from the database
             var Credential = (from p in db.Users
-                              where (p.UserName == txtUserName.Text && p.Password == txtPassword.Text)
+                              where (p.UserName == txtUserName.Text.ToLower() && p.Password == txtPassword.Text)
                               select p).FirstOrDefault();
             // Check if the User is valid or not
             if (Credential == null || txtUserName .Text == "" || txtPassword.Text == "")
